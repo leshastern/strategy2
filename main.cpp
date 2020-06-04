@@ -5,7 +5,7 @@ using namespace std;
 class Car
 {
 public:
-	virtual string use() const = 0;
+	virtual string distribution() const = 0;
 };
 
 class Context
@@ -49,7 +49,7 @@ public:
 class Red : public Car
 {
 public:
-	string use() const override
+	string distribution() const override
 	{
 		return "Son has red machine and it need to clean";
 	}
@@ -58,7 +58,7 @@ public:
 class Blue : public Car
 {
 public:
-	string use() const override
+	string distribution() const override
 	{
 		return "Daughter has blue machine and it don't need to clean";
 	}
